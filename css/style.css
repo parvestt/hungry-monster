@@ -99,7 +99,7 @@ button:focus {
 .meal__cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 30px;
+    grid-gap: 25px;
 }
 
 .meal__card {
@@ -221,4 +221,22 @@ button:focus {
     width: 24px;
     height: 24px;
     background: url(../img/icon/tick.png) no-repeat center center / contain;
+}
+
+@media screen and (max-width: 1200px){
+    .meal__cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 800px){
+    .meal__cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 500px){
+    .meal__cards {
+        grid-template-columns: 1fr;
+    }
 }
